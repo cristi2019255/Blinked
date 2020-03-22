@@ -18,14 +18,19 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.firebase.ui.auth.AuthUI;
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserInfo;
+import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
     private FirebaseDatabase database;
@@ -35,8 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private Button Inregistrare,Autorizare;
     RelativeLayout root;
     private RelativeLayout activity_main;
-    private static int SIGN_IN_CODE=1;
-
+    private String phonedb;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -132,12 +136,12 @@ public class MainActivity extends AppCompatActivity {
                         }
 
                         String namedb = name.getText().toString();
-                        String phonedb = phone.getText().toString();
+                        phonedb = phone.getText().toString();
                         String emaildb = email.getText().toString();
                         String passdb = pass.getText().toString();
 
                         mAuth.createUserWithEmailAndPassword(emaildb, passdb)
-                                .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
+                        .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
                                     @Override
                                     public void onComplete(@NonNull Task<AuthResult> task) {
                                         if (task.isSuccessful()) {
@@ -145,6 +149,8 @@ public class MainActivity extends AppCompatActivity {
                                             FirebaseUser user = mAuth.getCurrentUser();
                                             Toast.makeText(MainActivity.this, "Inregistrare cu succes.",
                                                     Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(MainActivity.this,"Asteptati emailul cu linkul de inregistrare",
+                                                    Toast.LENGTH_LONG).show();
                                         } else {
                                             // If sign in fails, display a message to the user.
                                             Toast.makeText(MainActivity.this, "Inregistrare esuata.",
@@ -152,14 +158,18 @@ public class MainActivity extends AppCompatActivity {
                                         }
                                     }
                                 });
-
                         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                         if (user != null) {
                             // Name, email address, and profile photo Url
-                            String name = user.getDisplayName();
-                            String email = user.getEmail();
                             Uri photoUrl = user.getPhotoUrl();
-                            String uid = user.getUid();
+                            String email = user.getEmail();
+
+                            //set the name and phone
+
+                            UserProfileChangeRequest profileUdates= new UserProfileChangeRequest.Builder()
+                                    .setDisplayName(namedb).build();
+                            user.updateProfile(profileUdates);
+
 
                             // Check if user's email is verified
                             boolean emailVerified = user.isEmailVerified();
@@ -178,10 +188,18 @@ public class MainActivity extends AppCompatActivity {
                             // FirebaseUser.getIdToken() instead.
 
                         }
-
                     }
                 });
         dialog.show();
+        FirebaseUser user=mAuth.getCurrentUser();
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Users").child(user.getUid());
+        HashMap<String,Object> map=new HashMap<>();
+        map.put("imageURL","DEFAULT");
+        map.put("Phone",phonedb);
+        map.put("City","None");
+        map.put("Group","None");
+        map.put("BirthDate","None");
+        reference.updateChildren(map);
     };
 
     private void ShowAuthorizationWindow(){
