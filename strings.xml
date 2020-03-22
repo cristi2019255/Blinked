@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Blinked</string>
+    <string name="app_in_name">An UBB students Applicatoin</string>
+    <string name="app_name_after">A donation App</string>
+    <string name="text_bottom">Enter your registration</string>
+    <string name="btnSignIn">Sign In</string>
+    <string name="btnRegister">Register</string>
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "947032045139",
+    "firebase_url": "https://blinked-1501c.firebaseio.com",
+    "project_id": "blinked-1501c",
+    "storage_bucket": "blinked-1501c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947032045139:android:84364cab4a82c6332338a6",
+        "android_client_info": {
+          "package_name": "com.example.blinked"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "947032045139-ranhs36gtcubm80a8srkn73bnudhf26u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.blinked",
+            "certificate_hash": "2e3a49d4f570719f0eff97259c0ead3427a31601"
+          }
+        },
+        {
+          "client_id": "947032045139-c1ag4mlmnv3ugn2j11q9loicvasjq0cs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBokzsoc6kTTLa7w5H-u9Wfv0lYRbacekE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "947032045139-c1ag4mlmnv3ugn2j11q9loicvasjq0cs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
