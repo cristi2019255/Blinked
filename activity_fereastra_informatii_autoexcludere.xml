@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fereastra_informatii_autoexcludere">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50sp"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:text="Felicitari!" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:lineSpacingExtra="5sp"
+                android:text="
+        Astăzi poți merge să donezi.\n
+        În continuare poți completa chestionarul de autoexcludere pentru a nu mai aștepta să îl completezi la centru.\n
+        Doar răspunde la întrebări în mod sincer. Situația ta particulară va fi analizată de un asistent medical.\n
+        Nu te îngrijora, cei mai mulți oameni trec cu bine prin acest test.\n
+        Nu uita: nu fuma o oră înainte și după donare, odihnește-te și relaxează-te, căci procesul e simplu."
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonSpreAutoexcludere"
+                android:layout_width="match_parent"
+                android:layout_margin="20sp"
+                android:background="#A30707"
+                android:layout_height="wrap_content"
+                android:text="Am Înțeles" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

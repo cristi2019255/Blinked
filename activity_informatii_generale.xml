@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".InformatiiGenerale">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="400dp"
+            android:layout_height="636dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="200dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/textView1"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="200dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginEnd="235dp"
+                    android:layout_marginRight="200dp"
+                    android:text="1. CINE SUNTEM NOI?"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.814"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.067" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="341dp"
+                    android:layout_height="192dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Bloodlink este o aplicație creată special pentru tine, pentru că viața ta este prioritatea noastră.\nMisiunea Bloodlink este de a susține și a facilita dezvoltarea ecosistemului medical din România.\nDirecțiile noastre principale sunt:\n• dezvoltarea unor metode de facilitare a procesului de donare;\n• crearea unei comunități salvatoare de vieți. \n ,,Noi suntem comunitatea, dacă toate astea nu pleacă de la noi, comunitatea nu ne va da nimic”"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView1"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="2. DE CE SĂ DONEZI SÂNGE?"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.089"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.434" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="339dp"
+                    android:layout_height="254dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="27dp"
+                    android:text="•Undeva, până la trei persone trăiesc datorită gestului tău.\n•Chiar în timp ce citești este o criză majoră de sânge în toate județele. Unul din zece pacienți care ajung în spitalele din România are nevoi de sânge sau de produse derivate din sânge.\n•Statistic, România este pe ultimele locuri în ce privește donarea benevolă de sânge, iar multe intervenții chirurgicale din țară sunt amânate deoarece deocamdată nu s-a descoperit un înlocuitor al sângelui.\n•Creșterea cantității de sânge în unitățile spitalicești din România scade numărul de abuzuri și cazuri de corupție bazate pe traficul de sânge."
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="3. CARE SUNT BENEFICIILE DONĂRII?"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.146"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4"
+                    app:layout_constraintVertical_bias="0.214" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="353dp"
+                    android:layout_height="365dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="\n•Pentru donatorii sănătoși, donarea de sânge este benefică;\n•Există studii care demonstrează creșterea duratei de viață la donatorii de sânge;\n
+         •Donatorii beneficiază la fiecare donare de un examen medical și de laborator gratuit(rezultatele investigațiilor sunt confidențiale);\n
+         •Vei beneficia de o zi de concediu plătit după fiecare donare de sânge;\n
+         •Riscul de accident vascular și de paralizie se reduc cu până la 30%;\n
+         •La fiecare donare se pierd 650 de calorii;\n
+         •Vei primi bonuri de masă (7 bonuri de masă);\n
+         •Ți se va elibera adeverință pentru reducere de 50% pe mijloacele de transport în comun;\n
+         •Nu există riscuri de infectare pentru donatorii de sânge (materialele folosite sunt sterile și de unică folosință);\n
+         •Efectele adverse sunt foarte rare."
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.724"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="4. CINE POATE DONA?"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.146"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6"
+                    app:layout_constraintVertical_bias="0.214" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="353dp"
+                    android:layout_height="394dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="\nPersoanele de cetățenie română sau orice cetățean al Uniunii Europene, cu reședința în
+    România care îndeplinesc următoarele condiții:\n
+    • vârsta cuprinsă în intervalul 18-60 ani;\n
+    • greutate peste 50Kg;\n
+    • puls regulat, 60 -100 bătăi/minut;\n
+    • tensiune arterială sistolică între 100 şi 180 mmHg;\n
+    • să nu fi avut vreo interventie chirurgicala in ultimele 6 luni;\n
+    • daca esti femeie sa nu fii: însărcinata, în perioada de lăuzie, în perioada menstruală;\n
+    • sa nu fi consumat alimente grase sau băuturi alcoolice cu cel puţin 24 de ore înaintea
+    donării;\n
+    • să nu urmezi tratamente pentru anumite afecțiuni: hipertensiune, boli de inima, boli
+    renale, boli psihice, boli hepatice, boli endocrine;\n
+    • să nu ai sau să fi avut urmatoarele boli: hepatită (de orice
+    tip), TBC, sifilis, malarie, epilepsie si alte boli neurologice, boli
+    psihice, bruceloză, ulcer, diabet zaharat, boli de inimă, boli de piele: psoriazis,
+    vitiligo, miopie forte peste (-) 6 dioptrii, cancer."
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.724"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="5. CARE SUNT CRITERIILE DE EXCLUDERE?"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.146"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8"
+                    app:layout_constraintVertical_bias="0.214" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="353dp"
+                    android:layout_height="499dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="\n a) Criterii de excludere permanentă:\n• afecţiuni cardiovasculare (inclusiv hipertensiunea arterială cronică în tratament,
+    angina pectorală); traumatisme craniene cu sechele; etilism cronic; schizofrenie;
+    epilepsie; hepatită cronică, ciroză hepatică; sifilis; pancreatită; cancer, leucemii;
+    diabet zaharat; tuberculoză;\n
+    • hiperlipidemie; astm bronşic; alergia severă; boli endocrine; lupus eritematos
+    diseminat şi alte colagenoze; psoriazis generalizat;\n
+    • persoanele pensionate medical, indiferent de diagnosticul de pensionare;\n
+    b) Criterii de excludere temporară:\n
+    • boli infecţioase (gripă , infectii bacteriene);\n
+    • anemie; examinare endoscopică, transfuzii, intervenţii chirurgicale, tatuaje, contact
+    apropiat cu persoane cu hepatită, HIV;\n
+    • vaccinări; sarcină, alăptare; tratamente dentare;\n
+    • consum de alcool în ultimele 48 de ore;\n
+    • consum de medicamente.\n
+    c) Criterii suplimentare de excludere pentru donatorii de componente sanguine prin afereză:\n
+    • trombocite mai mici de 200000 pe mmc;\n
+    • pat vascular necorespunzător;\n
+    • hipocalcemie;\n
+    • tratament cu antiagregante plachetare în ultimele 7 zile, corticosteroizi,
+    anticoagulante."
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.724"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9"
+                    app:layout_constraintVertical_bias="1.0" />
+
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="6. CUM SE DESFĂȘOARĂ DONAREA?"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.146"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10"
+                    app:layout_constraintVertical_bias="0.214" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="353dp"
+                    android:layout_height="938dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:text="\n1. Imediat înainte de donare, e recomandat:\n
+    • Consumul unei mese sărace în grăsimi, dar bogate în proteine și glucide, fără abuz.
+    • Consumul unei cantități suficiente de lichide naturale: apă, ceai. De exemplu, poți
+    mânca micul dejun format din fructe, legume, ouă, iaurt. Poți bea și o ceașcă de cafea
+    sau ceai\n
+    • Să practici repaus în sala de așteptare vreme de până la 30 minute (pentru a evita
+    lipotimia)\n
+    • Să nu fumezi cu cel puțin o oră înainte și după donare\n
+    • Să nu consumi alcool cu 24 de ore înainte de donare\n
+    • Să nu desfășori efort fizic intens cu 12 ore înainte de donare și la 12 ore după donare\n\n
+    2. Înregistrarea ca donator:\n
+    • Prezintă-te la centrul de transfuzii cu actul de identitate şi formularul
+    de autoexcludere completat. Acest formular se completează cu maximă
+    responsabilitate şi sinceritate.\n
+    • Va avea loc o convorbire medicală predonare - discuţie confidențială, care asigură că donarea
+     nu prezintă nici un risc,
+    atât pentru donator cât și pentru primitor.\n
+    • Prezintă-te la controlul biologic predonare care constă în: efectuarea grupei sanguine,
+    a hemoglobinei şi a glicemiei la nevoie.\n
+    • Va urma consultaţia medicală la cabinetul medical unde se evaluează chestionarul de
+    autoexcludere, rezultatele controlului biologic pre-donare şi se efectuează examenul
+    clinic propriu-zis (tensiunea arterială, puls, greutate, examen obiectiv). În urma acestei
+    consultaţii, donatorul poate fi admis, amânat temporar sau respins definitiv de la
+    donarea de sânge.\n\n
+    3. Donarea propriu-zisă:\n
+    • Donarea are loc în sala de recoltare. Ți se va colecta o cantitate de
+    sânge de 450ml în timp de 8-10min. Va fi folosită o trusă de donare sterilă, de unică
+    folosință, dezambalată în timp real, sub ochii tăi. Donarea va fi supravegheată de
+    medicul specialist.\n\n
+    Donatorului i se eliberează bonurile valorice, adeverinţa pentru zi liberă şi reducerile
+    pe mijloacele de transport. \n
+    Dacă în cursul procesului de donare, constatați că nu corespundeți criteriilor de donare, este
+    imperios necesar să comunicați personalului medical informații complete despre starea dvs de sănătate
+    și să aceptați decizia medicală coorespunzatoare.\n
+    De asemenea, dacă potențialul donator, din diverse motive, se răzgândește pe parcursul etapelor
+    de selecție, poate să o facă în orice moment și poate reveni la o dată ulterioară când este pregătit.\n
+    "
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.724"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11"
+                    app:layout_constraintVertical_bias="1.0" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

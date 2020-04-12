@@ -9,6 +9,8 @@
     <color name="btn_sign_in_stroke">#E81515</color>
     <color name="btn_register">#d99a6a</color>
     <color name="btn_register_stroke">#d98341</color>
-    <color name="btn_alert_others">#d8eb34</color>
+    <color name="btn_alert_others">#38f00a</color>
     <color name="btn_alert_my_community">#f50202</color>
+    <color name="btn_add_button">#62fc03</color>
+    <color name="facebookblue">#4287f5</color>
 </resources>

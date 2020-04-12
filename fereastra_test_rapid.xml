@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FereastraTestRapid">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textRapid1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="Chestionar rapid"
+                android:textAlignment="center"
+                android:textColor="#500303"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textRapid2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30sp"
+                    android:text="I. Ai vârsta cuprinsă între 18 și 60 de ani?"
+                    android:textColor="#000000"
+                    android:textSize="19sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/rgr1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:checkedButton="@id/rbr2"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbr1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="DA" />
+
+                        <RadioButton
+                            android:id="@+id/rbr2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="NU" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textRapid3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30sp"
+                    android:text="II. Ai peste 50 kilograme?"
+                    android:textColor="#000000"
+                    android:textSize="19sp" />
+
+                <RadioGroup
+                    android:id="@+id/rgr2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:checkedButton="@id/rbr4"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbr3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="DA" />
+
+                    <RadioButton
+                        android:id="@+id/rbr4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NU" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textRapid4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30sp"
+                    android:text="III. Ai suferit în ultimele 6 luni intervenții chirurgicale?"
+                    android:textColor="#000000"
+                    android:textSize="19sp" />
+
+                <RadioGroup
+                    android:id="@+id/rgr3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:checkedButton="@id/rbr6"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbr5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="DA" />
+
+                    <RadioButton
+                        android:id="@+id/rbr6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NU" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textRapid5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30sp"
+                    android:text="IV. Ești însărcinată sau te afli în perioada menstruală?"
+                    android:textColor="#000000"
+                    android:textSize="19sp" />
+
+                <RadioGroup
+                    android:id="@+id/rgr4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:checkedButton="@id/rbr8"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbr7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="DA" />
+
+                    <RadioButton
+                        android:id="@+id/rbr8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NU" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textRadio6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30sp"
+                    android:text="V. Ai consumat băuturi alcoolice în ultimele 48 de ore?"
+                    android:textColor="#000000"
+                    android:textSize="19sp" />
+
+                <RadioGroup
+                    android:id="@+id/rgr5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:checkedButton="@id/rbr10"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rbr9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="DA" />
+
+                    <RadioButton
+                        android:id="@+id/rbr10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NU" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textRadio7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30sp"
+                    android:text="VI Au trecut 8 săptămâni de la ultima donare?"
+                    android:textColor="#000000"
+                    android:textSize="19sp" />
+
+                <RadioGroup
+                    android:id="@+id/rgr6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:checkedButton="@id/rbr12"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbr11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="DA" />
+
+                    <RadioButton
+                        android:id="@+id/rbr12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NU" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textRadio8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30sp"
+                    android:text="VII. Ai avut vreodată ulcer, hepatită, TBC, sifilis, malarie, epilepsie, diabet zaharat, psoriazis, vitiligo, miopie forte (peste -6 dioptrii), cancer, astm?"
+                    android:textColor="#000000"
+                    android:textSize="19sp" />
+
+                <RadioGroup
+                    android:id="@+id/rgr7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:checkedButton="@id/rbr14"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rbr13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="DA" />
+
+                    <RadioButton
+                        android:id="@+id/rbr14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NU" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textRadio9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30sp"
+                    android:text="VIII. Ești pensionat pe caz medical?"
+                    android:textColor="#000000"
+                    android:textSize="19sp" />
+
+                <RadioGroup
+                    android:id="@+id/rgr8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:checkedButton="@id/rbr16"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbr15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="DA" />
+
+                    <RadioButton
+                        android:id="@+id/rbr16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NU" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textRadio10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30sp"
+                    android:text="IX. Ai boli infecțioase (gripă, infecții bacteriene)??"
+                    android:textColor="#000000"
+                    android:textSize="19sp" />
+
+                <RadioGroup
+                    android:id="@+id/rgr9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:checkedButton="@id/rbr18"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rbr17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="DA" />
+
+                    <RadioButton
+                        android:id="@+id/rbr18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NU" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textRadio11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30sp"
+                    android:text="X. Ați fost în detenție (închisoare) în ultimul an?"
+                    android:textColor="#000000"
+                    android:textSize="19sp" />
+
+                <RadioGroup
+                    android:id="@+id/rgr10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:checkedButton="@id/rbr20"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbr19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="DA" />
+
+                    <RadioButton
+                        android:id="@+id/rbr20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="NU" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonTestRapidVerifica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:background="#650404"
+                android:text="Verifică"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
