@@ -24,7 +24,7 @@
             android:layout_width="410dp"
             android:layout_height="48dp"
             android:ems="10"
-            android:hint="Password"
+            android:hint="Parolă"
             android:inputType="textPassword" />
     </LinearLayout>
 
